@@ -9,8 +9,8 @@ import WhatWeDid from '../components/WhatWeDid'
 const Projects: NextPage = () => {
   return (
     <Layout>
-      <NavBar />
-      <Header />
+      <NavBar active="projects" />
+      <Header title="Projects"/>
       <WhatWeDid />
       <ProblemsWeSolve />
       <AboutCEO />

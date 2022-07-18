@@ -10,10 +10,11 @@ import WhatWeDid from '../components/WhatWeDid'
 const Services: NextPage = () => {
   return (
     <Layout>
-      <NavBar />
-      <Header />
+      <NavBar active="services"/>
+      <Header title="Services" />
       <ProblemsWeSolve />
       <OurServices />
+      <AboutCEO />
     </Layout>
   )
 }

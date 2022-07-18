@@ -1,23 +1,21 @@
 import type { NextPage } from 'next'
 import AboutCEO from '../components/AboutCEO'
-import HomeHeader from '../components/HomeHeader'
+import Header from '../components/Header'
 import Layout from '../components/Layout'
 import NavBar from '../components/NavBar'
-import OurServices from '../components/OurServices'
 import ProblemsWeSolve from '../components/ProblemsWeSolve'
 import WhatWeDid from '../components/WhatWeDid'
 
-const Home: NextPage = () => {
+const Projects: NextPage = () => {
   return (
     <Layout>
       <NavBar />
-      <HomeHeader />
+      <Header />
       <WhatWeDid />
       <ProblemsWeSolve />
-      <OurServices />
       <AboutCEO />
     </Layout>
   )
 }
 
-export default Home
+export default Projects

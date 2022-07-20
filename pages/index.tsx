@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import AboutCEO from '../components/AboutCEO'
+import AboutUs from '../components/AboutUs'
 import CTA from '../components/CTA'
 import HomeHeader from '../components/HomeHeader'
 import Layout from '../components/Layout'
@@ -13,12 +14,13 @@ import WhatWeDid from '../components/WhatWeDid'
 const Home: NextPage = () => {
   return (
     <Layout>
-      <NavBar active="" />
+      <NavBar active="home" />
       <HomeHeader />
+      <AboutUs />
       <WhatWeDid />
-      <ProblemsWeSolve />
-      <CTA />
       <OurServices />
+      <CTA />
+      <ProblemsWeSolve />
       <Testimonials />
       <AboutCEO />
       <TrustedBy />

@@ -21,6 +21,6 @@ a {
 
 @layer components {
   .link-active {
-    @apply text-violet-400 border-violet-400;
+    @apply border-b-2 text-brown border-brown;
   }
 }

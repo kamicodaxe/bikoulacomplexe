@@ -27,7 +27,7 @@ const Footer: React.FC<{}> = ({ }) => {
                 <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
                     {
                         routes.map(route => (
-                            <li key={route}>
+                            <li key={route.path}>
                                 <Link href={route.path} className="flex items-center">
                                     <span className="px-4">
                                         {route.name}

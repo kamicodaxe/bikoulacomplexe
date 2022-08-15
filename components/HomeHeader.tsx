@@ -1,3 +1,4 @@
+import Link from "next/link"
 import MapView from "../features/MapView"
 
 
@@ -15,12 +16,14 @@ const HomeHeader: React.FC<{}> = ({ }) => {
                     {/* <p className="mt-6 mb-8 text-lg sm:mb-12">Dictum aliquam porta in condimentum ac integer
                         <br className="hidden md:inline lg:hidden" />turpis pulvinar, est scelerisque ligula sem
                     </p> */}
-                    <div className="flex flex-col mt-8 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-brown text-white">
-                            Réserver un rdv
-                        </a>
+                    <div className="flex flex-col mt-8 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:mt-16 lg:justify-start">
+                        <Link href='/contact'>
+                            <span className="px-8 py-3 text-lg font-semibold rounded bg-brown text-white hover:cursor-pointer">
+                                Réserver un rdv
+                            </span>
+                        </Link>
                     </div>
-                    
+
                 </div>
                 <div className="flex bg-transparent w-full overflow-hidden">
                     <div className="-translate-x-1/4">

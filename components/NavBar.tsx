@@ -40,7 +40,7 @@ const NavBar: React.FC<Props> = ({ active }) => {
                 <Link href="/" aria-label="Back to homepage" className="flex items-center p-2">
                     <div className="flex items-center">
                         <div className="h-12 w-12 relative">
-                            <Image layout="fill" src={require('../assets/images/logo.png')} />
+                            <Image layout="fill" src={require('../assets/images/logo.png')} alt="Logo Bikoula Complexe" />
                         </div>
                         <h2 className="text-2xl font-bold text-brown">GROUPE BIKOULA COMPLEXE</h2>
                     </div>

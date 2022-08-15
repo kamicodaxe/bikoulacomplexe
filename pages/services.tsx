@@ -11,10 +11,9 @@ const Services: NextPage = () => {
   return (
     <Layout>
       <NavBar active="services"/>
-      <Header title="Services" />
-      <ProblemsWeSolve />
+      {/* <Header title="Services" /> */}
       <OurServices />
-      <AboutCEO />
+      <ProblemsWeSolve />
     </Layout>
   )
 }

@@ -5,10 +5,10 @@ const ProblemsWeSolve: React.FC<{}> = ({ }) => {
     return (
         <section className="dark:bg-gray-800 dark:text-gray-100">
             <div className="container max-w-xl p-6 py-16 mx-auto space-y-12 lg:px-8 lg:max-w-7xl">
-                <div>
+                {/* <div>
                     <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-gray-50">Problems we solve</h2>
                     <p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-400">Quando cetero his ne, eum admodum sapientem ut.</p>
-                </div>
+                </div> */}
                 <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                     <div>
                         {/* <h3 className="text-2xl font-bold tracking-tight sm:text-3xl dark:text-gray-50">Ad vix debet docendi</h3> */}
@@ -16,10 +16,12 @@ const ProblemsWeSolve: React.FC<{}> = ({ }) => {
                         <div className="space-y-6">
                             {
                                 [
-                                    "Per ei quaeque sensibus",
-                                    "Cu imperdiet posidonium sed",
-                                    "Nulla omittam sadipscing mel ne",
-                                    "Ad vix debet docendi"
+                                    "Evaluation et stratégie de l’équipe de vente ;",
+                                    "Nous vous aidons à trouver des fournisseurs de matière première en Afrique ;",
+                                    "Le GROUPE BIKOULA COMPLEXE vous assiste dans le déploiement de votre activité en Afrique ;",
+                                    "Planification efficace, établissement de buts et d’objectifs et prévision ;",
+                                    "Nous trouvons des investisseurs pour vos activités ;",
+                                    "Nous vous présenterons les meilleures opportunités d'investissements en Afrique."
                                 ].map(title => (
                                     <div className="flex align-center" key={title}>
                                         <div className="flex-shrink-0">
@@ -30,8 +32,8 @@ const ProblemsWeSolve: React.FC<{}> = ({ }) => {
                                             </div>
                                         </div>
                                         <div className="ml-4">
-                                            <h4 className="text-lg font-medium leading-6 dark:text-gray-50">Per ei quaeque sensibus</h4>
-                                            <p className="mt-2 dark:text-gray-400">Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.</p>
+                                            <h4 className="text-lg font-medium leading-6 dark:text-gray-50">{title}</h4>
+                                            {/* <p className="mt-2 dark:text-gray-400">Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.</p> */}
                                         </div>
                                     </div>
                                 ))
@@ -39,7 +41,7 @@ const ProblemsWeSolve: React.FC<{}> = ({ }) => {
                         </div>
                     </div>
                     <div aria-hidden="true" className="mt-10 lg:mt-0 hidden lg:block">
-                        <img src="https://source.unsplash.com/random/360x480" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+                        <img src="https://source.unsplash.com/vPtbBNlKRBw/360x480" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
                     </div>
                 </div>
             </div>

@@ -1,12 +1,11 @@
 import Link from "next/link"
-import MapView from "../features/MapView"
-
+import dynamic from 'next/dynamic';
+const Cobe = dynamic(() => import('../features/Cobe'), { ssr: false });
 
 const HomeHeader: React.FC<{}> = ({ }) => {
 
     return (
         <section className="bg-gray-800 text-gray-100">
-            {/* <MapView /> */}
             <div className="container flex flex-col justify-center p-6 lg:flex-row lg:justify-between">
                 <div className="flex flex-col justify-start p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                     <h1 className="text-xl font-bold leading-none sm:text-6xl">
@@ -25,12 +24,11 @@ const HomeHeader: React.FC<{}> = ({ }) => {
                     </div>
 
                 </div>
-                <div className="flex bg-transparent w-full overflow-hidden">
-                    <div className="-translate-x-1/4">
-                        {/* @ts-ignore */}
-                        <MapView />
-                    </div>
+                <div className="flex bg-transparent w-full overflow-hidden relative">
+                    {/* @ts-ignore */}
+                    <Cobe />
                 </div>
+
             </div>
         </section>
     )

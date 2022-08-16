@@ -19,7 +19,7 @@ const MapView = () => {
         fetch('/datasets/places.json').then(res => res.json())
             .then(({ features }) => {
                 setPlaces(features)
-                // console.log(features)
+                console.log(features)
             });
 
     }, []);

@@ -27,6 +27,7 @@ const HomeHeader: React.FC<{}> = ({ }) => {
                 </div>
                 <div className="flex bg-transparent w-full overflow-hidden">
                     <div className="-translate-x-1/4">
+                        {/* @ts-ignore */}
                         <MapView />
                     </div>
                 </div>

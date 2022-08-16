@@ -8,7 +8,7 @@ const Projects: NextPage = () => {
   return (
     <Layout>
       <NavBar active="projects" />
-      <Header title="Projects"/>
+      <Header title="Projets"/>
       <WhatWeDid />
     </Layout>
   )

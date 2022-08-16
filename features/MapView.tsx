@@ -1,7 +1,9 @@
 
 import { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
-const Globe = dynamic(() => import('react-globe.gl'), { ssr: false });
+// import dynamic from 'next/dynamic';
+// const Globe = dynamic(() => import('react-globe.gl'), { ssr: false });
+let Globe = () => null
+if (typeof window !== 'undefined') Globe = require('react-globe.gl').default
 
 const MapView = () => {
     const [places, setPlaces] = useState<{
@@ -23,6 +25,7 @@ const MapView = () => {
     }, []);
 
     return <Globe
+        // @ts-ignore
         globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
         // backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         backgroundColor="rgba(0,0,0,0)"

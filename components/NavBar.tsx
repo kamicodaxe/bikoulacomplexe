@@ -11,7 +11,7 @@ const routes = [
         path: "/"
     },
     {
-        name: "Projects",
+        name: "Projets",
         path: "/projects"
     },
     {
@@ -47,7 +47,7 @@ const NavBar: React.FC<Props> = ({ active }) => {
                 <ul className="items-stretch hidden space-x-3 md:flex">
                     {
                         routes.map(route => (
-                            <li className={activeLink(route.name)} key={route.name}>
+                            <li className={activeLink(route.path)} key={route.name}>
                                 <Link href={route.path} className="flex items-center -mb-1 border-b-2">
                                     <span className="p-4">
                                         {route.name}

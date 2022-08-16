@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-const Globe = dynamic(async () => import('react-globe.gl'), { ssr: false });
+const Globe = dynamic(() => import('react-globe.gl'), { ssr: false });
 // let Globe = () => null
 // if (typeof window !== 'undefined') Globe = require('react-globe.gl').default
 

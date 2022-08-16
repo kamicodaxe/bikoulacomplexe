@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
 const Globe = dynamic(() => import('react-globe.gl'), { ssr: false });
 // let Globe = () => null
@@ -15,18 +15,26 @@ const MapView = () => {
         }
     }[]>([]);
 
-    useEffect(() => {
-        fetch('/datasets/places.json').then(res => res.json())
-            .then(({ features }) => {
-                setPlaces(features)
-                console.log(features)
-            });
+    const globeEl = useRef();
 
+    useEffect(() => {
+        console.log(globeEl.current);
+        // @ts-ignore
+        if (globeEl.current && globeEl.current?.retry) {
+            // @ts-ignore
+            globeEl.current.retry()
+        }
+    }, [places]);
+
+    useEffect(() => {
+        console.log(globeEl.current);
     }, []);
 
-    return places.length > 0 && <Globe
+    return <Globe
+        ref={globeEl}
         // @ts-ignore
-        globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+        globeImageUrl="/datasets/earth-night.jpg"
+        // globeImageUrl="/datasets/earth-day.jpg"
         // backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         backgroundColor="rgba(0,0,0,0)"
         labelsData={places}

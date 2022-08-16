@@ -30,27 +30,31 @@ const MapView = () => {
         console.log(globeEl.current);
     }, []);
 
-    return <Globe
-        ref={globeEl}
-        // @ts-ignore
-        globeImageUrl="/datasets/earth-night.jpg"
-        // globeImageUrl="/datasets/earth-day.jpg"
-        // backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
-        backgroundColor="rgba(0,0,0,0)"
-        labelsData={places}
-        // @ts-ignore
-        labelLat={d => d.properties.latitude}
-        // @ts-ignore
-        labelLng={d => d.properties.longitude}
-        // @ts-ignore
-        labelText={d => d.properties.name}
-        // @ts-ignore
-        labelSize={d => Math.sqrt(d.properties.pop_max) * 4e-4}
-        // @ts-ignore
-        labelDotRadius={d => Math.sqrt(d.properties.pop_max) * 4e-4}
-        labelColor={() => '#a4663d'}
-        labelResolution={2}
-    />;
+    return (
+        <div className='min-h-[320px] min-w-[320px]'>
+            <Globe
+                ref={globeEl}
+                // @ts-ignore
+                globeImageUrl="/datasets/earth-night.jpg"
+                // globeImageUrl="/datasets/earth-day.jpg"
+                // backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
+                backgroundColor="rgba(0,0,0,0)"
+                labelsData={places}
+                // @ts-ignore
+                labelLat={d => d.properties.latitude}
+                // @ts-ignore
+                labelLng={d => d.properties.longitude}
+                // @ts-ignore
+                labelText={d => d.properties.name}
+                // @ts-ignore
+                labelSize={d => Math.sqrt(d.properties.pop_max) * 4e-4}
+                // @ts-ignore
+                labelDotRadius={d => Math.sqrt(d.properties.pop_max) * 4e-4}
+                labelColor={() => '#a4663d'}
+                labelResolution={2}
+            />
+        </div>
+    )
 };
 
 export default MapView

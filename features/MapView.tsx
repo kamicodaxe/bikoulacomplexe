@@ -1,9 +1,9 @@
 
 import { useState, useEffect } from 'react';
-// import dynamic from 'next/dynamic';
-// const Globe = dynamic(() => import('react-globe.gl'), { ssr: false });
-let Globe = () => null
-if (typeof window !== 'undefined') Globe = require('react-globe.gl').default
+import dynamic from 'next/dynamic';
+const Globe = dynamic(() => import('react-globe.gl'), { ssr: false });
+// let Globe = () => null
+// if (typeof window !== 'undefined') Globe = require('react-globe.gl').default
 
 const MapView = () => {
     const [places, setPlaces] = useState<{

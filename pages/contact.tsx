@@ -51,7 +51,7 @@ const Contact: NextPage = () => {
               </p>
             </div>
           </div>
-          <form noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
+          <form className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
             <label className="block">
               <span className="mb-1">Noms et Prénoms</span>
               <input

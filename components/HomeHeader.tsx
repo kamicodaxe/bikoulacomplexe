@@ -1,7 +1,5 @@
-import dynamic from "next/dynamic";
 import Link from "next/link"
-// import MapView from "../features/MapView"
-const MapView = dynamic(() => import('../features/MapView'), { ssr: false });
+import MapView from "../features/MapView"
 
 
 const HomeHeader: React.FC<{}> = ({ }) => {

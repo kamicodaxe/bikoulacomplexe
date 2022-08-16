@@ -28,7 +28,6 @@ const NavBar: React.FC<Props> = ({ active }) => {
     const activeLink = (routeName: string) => {
         // TODO: Use classnames from npm
         const isActive = active.includes(routeName.toLowerCase())
-        console.log(isActive)
         if (isActive) return 'flex cursor-pointer link-active'
         return 'flex cursor-pointer'
         // return 'flex ' + active.includes(routeName.toLowerCase()) ? 'link-active' : ''

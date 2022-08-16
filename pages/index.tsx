@@ -10,12 +10,14 @@ import ProblemsWeSolve from '../components/ProblemsWeSolve'
 import Testimonials from '../components/Testimonials'
 import TrustedBy from '../components/TrustedBy'
 import WhatWeDid from '../components/WhatWeDid'
+import MapView from '../features/MapView'
 
 const Home: NextPage = () => {
   return (
     <Layout>
       <NavBar active="home" />
       <HomeHeader />
+      <MapView />
       <AboutUs />
       <WhatWeDid />
       <OurServices />

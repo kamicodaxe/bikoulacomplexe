@@ -6,9 +6,9 @@ import classNames from "classnames"
 const OurServices: React.FC<{}> = ({ }) => {
     const [tabIndex, setTabIndex] = useState(0)
     return (
-        <section className="dark:bg-gray-800 dark:text-gray-100 py-16">
+        <section className="bg-gray-800 text-gray-100 py-16">
             <div>
-                <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-50">Nos Services</h2>
+                <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-gray-50">Nos Services</h2>
             </div>
             <div className="container max-w-xl p-6 pt-12 mx-auto space-y-8 lg:px-8 lg:max-w-7xl">
                 <div className="flex justify-center items-center">
@@ -30,7 +30,7 @@ const OurServices: React.FC<{}> = ({ }) => {
                     }
                 </div>
                 <div className="max-w-3xl mx-auto">
-                    <p className="text-center dark:text-gray-400">
+                    <p className="text-center text-gray-400">
                         {serviceBody[tabIndex]}
                     </p>
                 </div>

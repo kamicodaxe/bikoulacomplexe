@@ -6,7 +6,7 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
         <section className="bg-brown text-gray-100 py-16 space-y-6">
             <div className="container mx-auto text-center">
                 <h2 className="text-5xl font-bold">Nos réalisations!</h2>
-                {/* <p className="dark:text-gray-400">Libero minima optio qui</p> */}
+                {/* <p className="text-gray-400">Libero minima optio qui</p> */}
             </div>
             <div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
 

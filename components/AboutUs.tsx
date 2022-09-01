@@ -13,17 +13,18 @@ const AboutUs: React.FC<{}> = ({ }) => {
                 <div className="flex flex-1 flex-col justify-center align-center">
                     <h2 className='text-4xl pb-8 font-semibold text-gray-800'>Des opportunité en Afrique</h2>
                     <p className='text-lg text-gray-600'>
-                        Notre société est d’abord basée sur notre relation avec des entreprises étrangères.
+                        Nous sommes le lien entre l’Afrique et l’Occident pour toutes les entreprises désireuses de s’implanter sur le continent africain. Nous vous garantissons la mise en relation et la meilleure approche avec les acteurs économiques privés et publics. Vous bénéficiez d’un carnet d’adresse fiable pour la réussite de vos projets. Nous vous accompagnons dans la recherche des financements, des potentiels investisseurs et groupes d’investisseurs à obtenir des financements auprès des instituts financières. Nous sommes notamment spécialiste de l’Afrique dans l’accompagnement et le conseil du secteur public et privé et des porteurs de projets.
+                        {/* Notre société est d’abord basée sur notre relation avec des entreprises étrangères.
                         Notre fonction et notre position issu de la diaspora est de leur apporter des informations fiables,
-                        actualisées et de les conseiller en matière d’investissements...
+                        actualisées et de les conseiller en matière d’investissements... */}
                     </p>
-                    <div className="flex flex-col mt-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+                    {/* <div className="flex flex-col mt-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                         <Link href="/contact" className="px-8 py-3  rounded text-brown">
                             <span className="text-brown text-lg font-semibold">
                                 En savoir plus
                             </span>
                         </Link>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

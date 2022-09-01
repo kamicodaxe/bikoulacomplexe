@@ -1,0 +1,4 @@
+{
+  "https://unpkg.com/react-visibility-sensor@5.0.1/dist/visibility-sensor.min.js": { "integrity": "sha512-ByHsF21I1fBvT0V4+lPykNbigKGaNNK/Fd88Ag2S/4m95gbuOiCsRA5zqUmQyVrRQsKH/0keeE95AoTDBmkH6g==", "contentType": "application/javascript; charset=utf-8" },
+  "version": 1
+}

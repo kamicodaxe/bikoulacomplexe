@@ -28,7 +28,8 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
                         <div className="p-2 pb-4">
                             <h3 className="text-2xl font-bold text-gray-800 mb-2">GROUPE CANAQUA</h3>
                             <p className="text-gray-800 text-md">
-                                LE GROUPE BIKOULA COMPLEXE à participer aux discussions et négociations pour le GROUPE CANAQUA dans le cadre de l’implantation d’un projet d’aquaculture et de transformation à  Monatélé au Cameroun.
+                            LE GROUPE BIKOULA COMPLEXE SARL est partenaire du projet CamAquaculture avec le GROUPE CANAQUA  Inc dans le cadre de l’implantation d’un projet d’aquaculture et de transformation à Monatélé au Cameroun.
+                                {/* LE GROUPE BIKOULA COMPLEXE à participer aux discussions et négociations pour le GROUPE CANAQUA dans le cadre de l’implantation d’un projet d’aquaculture et de transformation à  Monatélé au Cameroun. */}
                             </p>
                         </div>
                     </div>

@@ -9,10 +9,10 @@
 //     const [{ r }, api] = useSpring(() => ({
 //         r: 0,
 //         config: {
-//             mass: 1,
+//             mass: 10,
 //             tension: 240,
-//             friction: 40,
-//             precision: 0.001,
+//             friction: 10,
+//             precision: 0.01,
 //         },
 //     }));
 //     useEffect(() => {
@@ -103,10 +103,11 @@
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 
-export default function Cobe() {
+export default function Cobe({ isVisible }) {
     const canvasRef = useRef();
+    const phi = useRef(0);
+
     useEffect(() => {
-        let phi = 0;
         let width = 0;
         const onResize = () => canvasRef.current && (width = canvasRef.current.offsetWidth)
         window.addEventListener('resize', onResize)
@@ -121,9 +122,9 @@ export default function Cobe() {
             diffuse: 1,
             mapSamples: 16000,
             mapBrightness: 1,
-            baseColor: [96/255, 139/255, 132/255],
+            baseColor: [96 / 255, 139 / 255, 132 / 255],
             markerColor: [251 / 255, 100 / 255, 21 / 255],
-            glowColor: [99/255, 99/255, 99/255],
+            glowColor: [99 / 255, 99 / 255, 99 / 255],
             markers: [
                 { location: [37.7595, -122.4367], size: 0.03 },
                 { location: [40.7128, -74.006], size: 0.1 },
@@ -135,15 +136,17 @@ export default function Cobe() {
             onRender: (state) => {
                 // Called on every animation frame.
                 // `state` will be an empty object, return updated params.
-                state.phi = phi
-                phi += 0.005
-                state.width = width * 2
-                state.height = width * 2
+                state.phi = phi.current
+                if (isVisible) phi.current += 0.0095
+                if (state.width != width * 2) state.width = width * 2
+                if (state.height != width * 2) state.height = width * 2
+                
             }
         })
         setTimeout(() => canvasRef.current.style.opacity = '1')
         return () => globe.destroy()
-    }, [])
+    }, [isVisible])
+
     return <div style={{
         width: '100%',
         maxWidth: 600,

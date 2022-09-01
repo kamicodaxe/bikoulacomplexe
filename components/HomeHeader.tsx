@@ -30,6 +30,7 @@ const HomeHeader: React.FC<{}> = ({ }) => {
     }, [])
 
     return (
+        // @ts-ignore
         <section className="bg-gray-800 text-gray-100" ref={headerRef}>
             <div className="container flex flex-col justify-center p-6 lg:flex-row lg:justify-between">
                 <div className="flex flex-col justify-start p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">

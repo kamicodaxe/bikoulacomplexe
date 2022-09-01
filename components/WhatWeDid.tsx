@@ -28,8 +28,8 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
                         <div className="p-2 pb-4">
                             <h3 className="text-2xl font-bold text-gray-800 mb-2">GROUPE CANAQUA INC</h3>
                             <p className="text-gray-800 text-md">
-                                LE GROUPE BIKOULA COMPLEXE SARL est partenaire du projet CamAquaculture avec le GROUPE CANAQUA  Inc dans le cadre de l’implantation d’un projet d’aquaculture et de transformation à Monatélé au Cameroun.
-                                {/* LE GROUPE BIKOULA COMPLEXE à participer aux discussions et négociations pour le GROUPE CANAQUA dans le cadre de l’implantation d’un projet d’aquaculture et de transformation à  Monatélé au Cameroun. */}
+                                LE GROUPE BIKOULA COMPLEXE SARL est partenaire du projet CamAquaculture avec le GROUPE CANAQUA  Inc dans le cadre de l&apos;implantation d&apos;un projet d&apos;aquaculture et de transformation à Monatélé au Cameroun.
+                                {/* LE GROUPE BIKOULA COMPLEXE à participer aux discussions et négociations pour le GROUPE CANAQUA dans le cadre de l&apos;implantation d&apos;un projet d&apos;aquaculture et de transformation à  Monatélé au Cameroun. */}
                             </p>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
                         <div className="p-2 pb-4">
                             <h3 className="text-2xl font-bold text-gray-800 mb-2">INFRASTEC</h3>
                             <p className="text-gray-800 text-md">
-                                LE GROUPE BIKOULA COMPLEXE en partenariat avec l’entreprise INFRASTEC contribue au développement durable de l&apos;Afrique en facilitant l&apos;accès aux énergies photovoltaïques,
+                                LE GROUPE BIKOULA COMPLEXE en partenariat avec l&apos;entreprise INFRASTEC contribue au développement durable de l&apos;Afrique en facilitant l&apos;accès aux énergies photovoltaïques,
                                 ,assemblages des systèmes d'approvisionnements en eau propre, l'éclairage public et la santé.
                             </p>
                         </div>
@@ -69,7 +69,7 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
                             </p>
                             {/* <p className="text-gray-800 text-md">
-                                LE GROUPE BIKOULA COMPLEXE accompagne les entreprises partenaires VD3E et A4 RECYCLAGE dans le cadre du développement de l’activité TRADING dans l’achat et revente négoce de fractions D3E (rebuts informatique)
+                                LE GROUPE BIKOULA COMPLEXE accompagne les entreprises partenaires VD3E et A4 RECYCLAGE dans le cadre du développement de l&apos;activité TRADING dans l&apos;achat et revente négoce de fractions D3E (rebuts informatique)
                             </p> */}
                         </div>
                     </div>
@@ -84,7 +84,7 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
                             </p>
                             {/* <p className="text-gray-800 text-md">
-                            MIDAS (master franchise) est l’une des nombreuses entreprises à succès qu’accompagne LE GROUPE BIKOULA COMPLEXE. Cette entreprise a pour mission de prendre soin de la mobilité de de chaque conducteur sur le long terme.
+                            MIDAS (master franchise) est l&apos;une des nombreuses entreprises à succès qu&apos;accompagne LE GROUPE BIKOULA COMPLEXE. Cette entreprise a pour mission de prendre soin de la mobilité de de chaque conducteur sur le long terme.
                             </p> */}
                         </div>
                     </div>

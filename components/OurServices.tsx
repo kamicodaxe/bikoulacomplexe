@@ -16,8 +16,8 @@ const OurServices: React.FC<{}> = ({ }) => {
                         [
                             "Consulting",
                             "Mandat et représentation",
-                            "Excepturi",
-                            "Consectetur"
+                            "Transfère de Technologie",
+                            "Formations"
                         ].map((title, index) => (
                             <span
                                 key={title}
@@ -49,7 +49,7 @@ const OurServices: React.FC<{}> = ({ }) => {
 const serviceBody = [
     "Nous sommes le lien entre la France et l’Afrique pour toutes les entreprises désireuses de s’implanter sur le continent africain. Nous vous mettons en contact avec les personnes adaptées sur place. Vous bénéficiez d’un carnet d’adresses fourni et de confiance pour mener vos projets à bien. Nous vous aidons à rechercher des investisseurs et à obtenir des prêtes auprès des instituts bancaires africains. Nous sommes notamment spécialistes du Cameroun, un pays où nous aidons des sociétés à se développer depuis longtemps.",
     "Avec une garantie de résultat, nous pouvons nous déplacer en France et en Afrique pour apporter aux entreprises les conseils nécessaires à la réussite de leurs projets. Faites appel à nous pour élaborer une stratégie cohérente et efficace. Ainsi, vous pourrez développer vos activités en Afrique, diminuer vos coûts et créer des emplois. ",
-    "3 - Nous sommes le lien entre la France et l’Afrique pour toutes les entreprises désireuses de s’implanter sur le continent africain. Nous vous mettons en contact avec les personnes adaptées sur place. Vous bénéficiez d’un carnet d’adresses fourni et de confiance pour mener vos projets à bien. Nous vous aidons à rechercher des investisseurs et à obtenir des prêtes auprès des instituts bancaires africains. Nous sommes notamment spécialistes du Cameroun, un pays où nous aidons des sociétés à se développer depuis longtemps.",
+    "Nous vous apporterons de partenaires techniques pour vous faciliter le transfère des nouvelles technologies qui boostera votre productivité.",
     "4 - Nous sommes le lien entre la France et l’Afrique pour toutes les entreprises désireuses de s’implanter sur le continent africain. Nous vous mettons en contact avec les personnes adaptées sur place. Vous bénéficiez d’un carnet d’adresses fourni et de confiance pour mener vos projets à bien. Nous vous aidons à rechercher des investisseurs et à obtenir des prêtes auprès des instituts bancaires africains. Nous sommes notamment spécialistes du Cameroun, un pays où nous aidons des sociétés à se développer depuis longtemps.",
 ]
 

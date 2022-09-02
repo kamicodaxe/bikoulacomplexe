@@ -24,7 +24,7 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
 
                 <div className="flex flex-col items-center p-4">
                     <div className="max-w-[300px] bg-white">
-                        <Image src="/partners/groupecanaqua.png" width={320} height={220} className="object-cover" alt="partner bikoula complexe" />
+                        <Image src="/partners/groupecanaqua.png" width={320} height={220} className="object-contain" alt="partner bikoula complexe" />
                         <div className="p-2 pb-4">
                             <h3 className="text-2xl font-bold text-gray-800 mb-2">GROUPE CANAQUA INC</h3>
                             <p className="text-gray-800 text-md">
@@ -63,7 +63,7 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
                 <div className="flex flex-col items-center p-4">
                     <div className="max-w-[300px] bg-white">
                         {/* Le drapeaux de 12 pays en arfique */}
-                        <Image src="/partners/logo-02.png" width={320} height={220} className="object-contain" alt="partner bikoula complexe" />
+                        <Image src="/images/africa.png" width={320} height={220} className="object-contain" alt="partner bikoula complexe" />
                         <div className="p-2 pb-4">
                             <h3 className="text-2xl font-bold text-gray-800 mb-2">Les Partenaires institutionnelle</h3>
                             <p className="text-gray-800 text-md">

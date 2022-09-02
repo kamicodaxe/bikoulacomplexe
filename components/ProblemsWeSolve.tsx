@@ -19,7 +19,7 @@ const ProblemsWeSolve: React.FC<{}> = ({ }) => {
                                     "Evaluation et stratégie de l’équipe de vente ;",
                                     "Nous vous aidons à trouver des fournisseurs de matière première en Afrique ;",
                                     "Le GROUPE BIKOULA COMPLEXE vous assiste dans le déploiement de votre activité en Afrique ;",
-                                    "Planification efficace, établissement de buts et d’objectifs et prévision ;",
+                                    "Planification efficace, établissement de buts et d’objectifs et prévisions ;",
                                     "Le GROUPE BIKOULA COMPLEXE vous aide dans la recherche des investisseurs et des capitaux pour financer vos projets ;",
                                     "Nous vous présenterons les meilleures opportunités d'investissements en Afrique."
                                 ].map(title => (

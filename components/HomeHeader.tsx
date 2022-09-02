@@ -53,8 +53,8 @@ const HomeHeader: React.FC<{}> = ({ }) => {
                 <div className="flex bg-transparent w-full overflow-hidden relative">
                     {/* @ts-ignore */}
                     {
-                        isInView && <Cobe isVisible={isInView} />
-                        // <Cobe isVisible={isInView} />
+                        // isInView && <Cobe isVisible={isInView} />
+                        <Cobe isVisible={isInView} />
                     }
                 </div>
 

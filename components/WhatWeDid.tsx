@@ -42,7 +42,7 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
                             <h3 className="text-2xl font-bold text-gray-800 mb-2">INFRASTEC</h3>
                             <p className="text-gray-800 text-md">
                                 LE GROUPE BIKOULA COMPLEXE en partenariat avec l&apos;entreprise INFRASTEC contribue au développement durable de l&apos;Afrique en facilitant l&apos;accès aux énergies photovoltaïques,
-                                ,assemblages des systèmes d&apos;approvisionnements en eau propre, l&apos;éclairage public et la santé.
+                                assemblages des systèmes d&apos;approvisionnements en eau propre, l&apos;éclairage public et la santé.
                             </p>
                         </div>
                     </div>
@@ -65,9 +65,9 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
                         {/* Le drapeaux de 12 pays en arfique */}
                         <Image src="/images/africa.png" width={320} height={220} className="object-contain" alt="partner bikoula complexe" />
                         <div className="p-2 pb-4">
-                            <h3 className="text-2xl font-bold text-gray-800 mb-2">Les Partenaires institutionnelle</h3>
+                            <h3 className="text-2xl font-bold text-gray-800 mb-2">Les Partenaires institutionnels</h3>
                             <p className="text-gray-800 text-md">
-                                Le GROUPE BIKOULA COMPLEXE contribue au développement des collectivités territoriales africaines par le mandat qui lui est donné (à l&apos;instar de Kinshasa, Monatélé et Sangmelima), dans des projets communautaires et sociaux (Agriculture, Santé,  Éducation, Logement). Il accompagne aussi l&apos;état du Cameroun dans la concrétisation des projets structurants et la recherche de partenaire financier et technique.
+                                Le GROUPE BIKOULA COMPLEXE contribue au développement des collectivités territoriales africaines par le mandat qui lui est donné (à l&apos;instar de Kinshasa, Monatélé et Sangmelima), dans des projets communautaires et sociaux (Agriculture, Santé,  Éducation, Logement). Il accompagne aussi les états dans la concrétisation des projets structurants et la recherche de partenaire financier et technique.
                             </p>
                             {/* <p className="text-gray-800 text-md">
                                 LE GROUPE BIKOULA COMPLEXE accompagne les entreprises partenaires VD3E et A4 RECYCLAGE dans le cadre du développement de l&apos;activité TRADING dans l&apos;achat et revente négoce de fractions D3E (rebuts informatique)

@@ -1,6 +1,17 @@
+import { useEffect } from "react"
 
+const isServer = typeof window === 'undefined'
+const WOW = !isServer ? require('wowjs') : null
 
 const TrustedBy: React.FC<{}> = ({ }) => {
+
+    useEffect(() => {
+        console.log(WOW)
+        // @ts-ignore
+        new WOW.WOW({
+            live: false
+        }).init()
+    }, [])
 
     return (
         <section className="p-6 bg-gray-800 text-gray-100">
@@ -9,25 +20,25 @@ const TrustedBy: React.FC<{}> = ({ }) => {
             </div>
             <div className="container flex flex-wrap justify-center mx-auto text-gray-400">
                 <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
-                    <img src={"/partners/logo-01.png"} alt="Partner logo" />
+                    <img className="wow fadeInUp" src={"/partners/logo-01.png"} alt="Partner logo" />
                 </div>
                 <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
-                    <img src={"/partners/logo-02.png"} alt="Partner logo" />
+                    <img className="wow fadeInUp" src={"/partners/logo-02.png"} alt="Partner logo" />
                 </div>
                 <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
-                    <img src={"/partners/logo-03.png"} alt="Partner logo" />
+                    <img className="wow fadeInUp" src={"/partners/logo-03.png"} alt="Partner logo" />
                 </div>
                 <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
-                    <img src={"/partners/logo-04.png"} alt="Partner logo" />
+                    <img className="wow fadeInUp" src={"/partners/logo-04.png"} alt="Partner logo" />
                 </div>
                 <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
-                    <img src={"/partners/logo-06.jpeg"} alt="Partner logo" />
+                    <img className="wow zoomIn" src={"/partners/logo-06.jpeg"} alt="Partner logo" />
                 </div>
                 <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
-                    <img src={"/partners/logo-05.png"} alt="Partner logo" />
+                    <img className="wow zoomIn" src={"/partners/logo-05.png"} alt="Partner logo" />
                 </div>
                 <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
-                    <img src={"/partners/groupecanaqua.png"} alt="Partner logo groupecanaqua.png" />
+                    <img className="wow zoomIn" src={"/partners/groupecanaqua.png"} alt="Partner logo groupecanaqua.png" />
                 </div>
                 {/* <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
                 <img src={"/partners/logo-01.png"} alt="Partner logo" />

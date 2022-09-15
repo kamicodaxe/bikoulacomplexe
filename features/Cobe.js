@@ -140,10 +140,12 @@ export default function Cobe({ isVisible }) {
                 if (isVisible) phi.current += 0.0095
                 if (state.width != width * 2) state.width = width * 2
                 if (state.height != width * 2) state.height = width * 2
-                
+
             }
         })
-        setTimeout(() => canvasRef.current.style.opacity = '1')
+        setTimeout(() => {
+            if (canvasRef.current?.style?.opacity) canvasRef.current.style.opacity = '1'
+        })
         return () => globe.destroy()
     }, [isVisible])
 

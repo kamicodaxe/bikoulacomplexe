@@ -32,17 +32,29 @@ const TrustedBy: React.FC<{}> = ({ }) => {
                     <img className="wow fadeInUp" src={"/partners/logo-04.png"} alt="Partner logo" />
                 </div>
                 <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
+                    <img className="wow zoomIn object-contain" src={"/partners/ecti.png"} alt="Partner ecti" />
+                </div>
+                <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
+                    <img className="wow zoomIn object-contain" src={"/partners/logo-05.png"} alt="Partner logo" />
+                </div>
+                <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
+                    <img className="wow zoomIn object-contain" src={"/partners/groupecanaqua.png"} alt="Partner logo groupecanaqua.png" />
+                </div>
+                <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
+                    <img className="wow zoomIn object-contain" src={"/partners/hydraform.png"} alt="Partner logo hydraform" />
+                </div>
+                <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
+                    <img className="wow zoomIn" src={"/partners/tricenter.png"} alt="Partner logo tricenter" />
+                </div>
+                <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
+                    <img className="wow zoomIn" src={"/partners/articstore.png"} alt="Partner articstore" />
+                </div>
+                <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
                     <img className="wow zoomIn" src={"/partners/logo-06.jpeg"} alt="Partner logo" />
                 </div>
                 <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
-                    <img className="wow zoomIn" src={"/partners/logo-05.png"} alt="Partner logo" />
+                    <img className="wow zoomIn" src={"/partners/bogital.png"} alt="Partner bogital cameroon, web development company" />
                 </div>
-                <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
-                    <img className="wow zoomIn" src={"/partners/groupecanaqua.png"} alt="Partner logo groupecanaqua.png" />
-                </div>
-                {/* <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
-                <img src={"/partners/logo-01.png"} alt="Partner logo" />
-                </div> */}
             </div>
         </section>
     )

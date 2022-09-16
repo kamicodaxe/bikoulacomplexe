@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ceoImage from '../assets/images/ceo.png'
+import ceoImage from '../assets/images/ceo.jpeg'
 
 const AboutCEO: React.FC<{}> = ({ }) => {
 
@@ -25,7 +25,7 @@ const AboutCEO: React.FC<{}> = ({ }) => {
                     </div>
                 </div>
                 <div className="flex p-6">
-                    <Image src={ceoImage} height="512px" width="360px" alt="Groupe Bikoula ComplexeCEO image" className="rounded-full" />
+                    <Image src={ceoImage} height="512px" width="360px" alt="Groupe Bikoula Complexe CEO Jean-Luc ENGONO" className="rounded-full" />
                 </div>
 
             </div>

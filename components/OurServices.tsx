@@ -11,7 +11,7 @@ const OurServices: React.FC<{}> = ({ }) => {
                 <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-gray-50">Nos Services</h2>
             </div>
             <div className="container max-w-xl p-6 pt-12 mx-auto space-y-8 lg:px-8 lg:max-w-7xl">
-                <div className="flex justify-center items-center overflow-y-scroll">
+                <div className="flex justify-center items-center wrap">
                     {
                         [
                             "Consulting",

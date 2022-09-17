@@ -25,7 +25,7 @@ const AboutCEO: React.FC<{}> = ({ }) => {
                     </div>
                 </div>
                 <div className="flex p-6">
-                    <Image src={ceoImage} height="512px" width="360px" alt="Groupe Bikoula Complexe CEO Jean-Luc ENGONO" className="rounded-full" />
+                    <Image src={ceoImage} height="512px" width="512px" alt="Groupe Bikoula Complexe CEO Jean-Luc ENGONO" className="rounded-full" />
                 </div>
 
             </div>

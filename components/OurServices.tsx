@@ -47,9 +47,9 @@ const OurServices: React.FC<{}> = ({ }) => {
 }
 
 const serviceBody = [
-    "Nous sommes le lien entre l’Afrique et la France pour toutes les entreprises désireuses de s’implanter sur le continent africain. Nous vous mettons en contact avec les personnes adaptées sur place. Vous bénéficiez d’un carnet d’adresses fourni et de confiance pour mener vos projets à bien. Nous vous aidons à rechercher des investisseurs et à obtenir des prêtes auprès des instituts bancaires africains. Nous sommes notamment spécialistes du Cameroun, un pays où nous aidons des sociétés à se développer depuis longtemps.",
+    "Nous sommes le lien entre l’Afrique et le reste du Monde pour toutes les entreprises désireuses de s’implanter sur le continent africain. Nous vous mettons en contact avec les personnes adaptées sur place. Vous bénéficiez d’un carnet d’adresses fourni et de confiance pour mener vos projets à bien. Nous vous aidons à rechercher des investisseurs et à obtenir des prêtes auprès des instituts bancaires africains. Nous sommes notamment spécialistes du Cameroun, un pays où nous aidons des sociétés à se développer depuis longtemps.",
     "La garantie de résultat étant notre préoccupation première, nous avons vocation à aller au plus près des réalités du terrain grâce à notre réseau bien implanté pour apporter à notre clientèle le bon conseil qui fera toute la différence pour la réussite de son projet.",
-    "Nous vous présentons des partenaires techniques et fiables qui jouissent d'une expérience avérée dans la réalisation des infrastructures similaires à vos attentes.",
+    "Nous vous présentons des partenaires techniques fiables qui jouissent d'une expérience avérée dans la réalisation des infrastructures similaires à vos attentes.",
     "La société ECTI  et le Groupe Bikoula Complexe assurent la formation, le transfert de technologie et un accompagnement technique  de nos partenaires en Afrique afin d'accroitre la productivité et la rentabilité des investissements Africains.",
 ]
 

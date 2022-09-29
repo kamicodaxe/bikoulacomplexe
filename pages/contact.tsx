@@ -72,7 +72,10 @@ const Contact: NextPage = () => {
               </p>
             </div>
           </div>
-          <form className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
+          <form
+            className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
+            action="https://formsubmit.co/engonojeanluc@bikoulacomplexe.com" method="POST"
+          >
             <label className="block">
               <span className="mb-1">Noms et Prénoms</span>
               <input
@@ -88,6 +91,10 @@ const Contact: NextPage = () => {
               <span className="mb-1">Message</span>
               <textarea rows={5} className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800"></textarea>
             </label>
+
+            <input type="hidden" name="_next" value="https://www.bikoulacomplexe.com/"></input>
+            <input type="hidden" name="_subject" value="Formulaire Sit Internet"></input>
+
             <button type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-brown text-gray-100 focus:ring-brown hover:ring-brown">
               Envoyez
             </button>

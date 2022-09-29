@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 
 const CTA: React.FC<{}> = ({ }) => {
@@ -8,9 +9,11 @@ const CTA: React.FC<{}> = ({ }) => {
                 <h1 className="text-3xl font-semibold leading-tight text-center lg:text-left">
                     Vous souhaitez collaborer avec nous?
                 </h1>
-                <button className="px-8 py-3 text-lg font-semibold rounded text-gray-100 bg-brown">
-                    Prénez un rdv!
-                </button>
+                <Link href='/contact'>
+                    <button className="px-8 py-3 text-lg font-semibold rounded text-gray-100 bg-brown">
+                        Prénez un rdv!
+                    </button>
+                </Link>
             </div>
         </section>
     )

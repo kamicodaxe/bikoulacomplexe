@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const routes = [
     {
-        name: "Group Bikoula Complexe",
+        name: "Groupe Bikoula Complexe",
         path: "/"
     },
     {

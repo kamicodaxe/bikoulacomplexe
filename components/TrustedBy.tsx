@@ -71,7 +71,10 @@ const TrustedBy: React.FC<{}> = ({ }) => {
                     <img className="wow zoomIn object-contain" src={"/partners/cycleterre.png"} alt="Partner Cycle terre" />
                 </div>
                 <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
-                    <img className="wow zoomIn object-contain" src={"/partners/serv.png"} alt="Partner Serv" />
+                    <img className="wow zoomIn object-contain" src={"/partners/serv.PNG"} alt="Partner Serv" />
+                </div>
+                <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
+                    <img className="wow zoomIn object-contain" src={"/partners/alfalaval.png"} alt="Partner Alpha Laval" />
                 </div>
             </div>
         </section>

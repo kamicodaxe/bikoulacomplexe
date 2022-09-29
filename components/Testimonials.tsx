@@ -4,11 +4,13 @@ const Testimonials: React.FC<{}> = ({ }) => {
 
     return (
         <section className=" bg-gray-100 py-16">
+            
             <div className="container flex flex-col items-center mx-auto md:p-10 md:px-12">
                 <h2 className="text-4xl font-semibold leading-none text-center">
                 Ce que nos clients disent de nous
                 </h2>
             </div>
+
             <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10">
                 <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
                     <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-gray-900">
@@ -30,6 +32,7 @@ const Testimonials: React.FC<{}> = ({ }) => {
                         <p className="text-sm uppercase">Julien</p>
                     </div>
                 </div>
+
                 <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
                     <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-gray-900">
                         <p className="relative px-6 py-1 text-lg italic text-center text-gray-100">
@@ -50,6 +53,7 @@ const Testimonials: React.FC<{}> = ({ }) => {
                         <p className="text-sm uppercase">Françoise</p>
                     </div>
                 </div>
+
                 <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
                     <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-gray-900">
                         <p className="relative px-6 py-1 text-lg italic text-center text-gray-100">

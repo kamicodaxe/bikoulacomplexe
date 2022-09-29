@@ -79,17 +79,21 @@ const Contact: NextPage = () => {
             <label className="block">
               <span className="mb-1">Noms et Prénoms</span>
               <input
-                type="text"
+                name="Noms" type="text"
                 placeholder="Leroy Jenkins"
                 className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800" />
             </label>
             <label className="block">
+              <span className="mb-1">Numéro de Téléphone</span>
+              <input name="Téléphone" type="phone" placeholder="+1 (840) 541-2563" className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800" />
+            </label>
+            <label className="block">
               <span className="mb-1">Adresse Email</span>
-              <input type="email" placeholder="leroy@jenkins.com" className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800" />
+              <input name="Email" type="email" placeholder="leroy@jenkins.com" className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800" />
             </label>
             <label className="block">
               <span className="mb-1">Message</span>
-              <textarea rows={5} className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800"></textarea>
+              <textarea name="Message" rows={5} className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800"></textarea>
             </label>
 
             <input type="hidden" name="_next" value="https://www.bikoulacomplexe.com/"></input>
@@ -101,7 +105,7 @@ const Contact: NextPage = () => {
           </form>
         </div>
       </section>
-    </Layout>
+    </Layout >
   )
 }
 

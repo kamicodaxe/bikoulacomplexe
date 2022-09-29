@@ -97,9 +97,9 @@ const Contact: NextPage = () => {
             </label>
 
             <input type="hidden" name="_next" value="https://www.bikoulacomplexe.com/"></input>
-            <input type="hidden" name="_subject" value="Formulaire Sit Internet"></input>
+            <input type="hidden" name="_subject" value="Formulaire Site Internet"></input>
 
-            <button type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-brown text-gray-100 focus:ring-brown hover:ring-brown">
+            <button type="submit" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-brown text-gray-100 focus:ring-brown hover:ring-brown">
               Envoyez
             </button>
           </form>

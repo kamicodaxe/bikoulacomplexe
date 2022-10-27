@@ -5,7 +5,7 @@ const AboutCEO: React.FC<{}> = ({ }) => {
 
     return (
         <section className="bg-gray-800 text-gray-100">
-            <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+            <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-evenly lg:items-center">
                 <div className="flex flex-1 flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
 
                     <div className="px-4 py-12 rounded-t-lg sm:px-4 md:px-12 bg-gray-900">

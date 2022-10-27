@@ -34,7 +34,7 @@ const NavBar: React.FC<Props> = ({ active }) => {
     }
 
     return (
-        <nav className="p-4 px-8 pb-0 bg-gray-800 text-gray-100">
+        <nav className="p-6 pb-0 bg-gray-800 text-gray-100">
             <div className="container flex justify-between h-12 mx-auto">
                 <Link href="/" aria-label="Back to homepage" className="flex items-center p-2">
                     <div className="flex items-center">

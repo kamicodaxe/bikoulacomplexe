@@ -33,7 +33,7 @@ const HomeHeader: React.FC<{}> = ({ }) => {
         // @ts-ignore
         <section className="bg-gray-800 text-gray-100" ref={headerRef}>
             <div className="container flex flex-col justify-center p-6 lg:flex-row lg:justify-between">
-                <div className="flex flex-col justify-start p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+                <div className="flex flex-col justify-start p-4 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                     <h1 className="text-xl font-bold leading-none sm:text-6xl">
                         Votre consultant pour vos activités en
                         <span className="text-brown"> Afrique</span>

@@ -8,7 +8,7 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
                 <h2 className="text-5xl font-bold">Nos réalisations!</h2>
                 {/* <p className="text-gray-400">Libero minima optio qui</p> */}
             </div>
-            <div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="container mx-auto grid justify-center gap-4 text-center sm:grid-cols-2 lg:grid-cols-3">
 
                 <div className="flex flex-col items-center p-4">
                     <div className="max-w-[300px] bg-white">

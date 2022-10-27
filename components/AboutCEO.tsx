@@ -6,7 +6,7 @@ const AboutCEO: React.FC<{}> = ({ }) => {
     return (
         <section className="bg-gray-800 text-gray-100">
             <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-                <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+                <div className="flex flex-1 flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
 
                     <div className="px-4 py-12 rounded-t-lg sm:px-4 md:px-12 bg-gray-900">
                         <p className="relative py-1 text-lg italic text-center text-gray-100">
@@ -26,8 +26,9 @@ const AboutCEO: React.FC<{}> = ({ }) => {
                             </svg>
                         </p>
                     </div>
+
                 </div>
-                <div className="flex p-6">
+                <div className="p-6">
                     <Image src={ceoImage} height="512px" width="512px" alt="Groupe Bikoula Complexe CEO Jean-Luc ENGONO" className="rounded-full object-cover" />
                 </div>
 

@@ -74,7 +74,7 @@ const Contact: NextPage = () => {
           </div>
           <form
             className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
-            action="https://bikoulacomplexe.com/api/form?email=engonojeanluc@bikoulacomplexe.com" method="POST"
+            action="https://bikoulacomplexe.com/api/form" method="POST"
           >
             <label className="block">
               <span className="mb-1">Noms et Prénoms</span>
@@ -99,7 +99,7 @@ const Contact: NextPage = () => {
             <input type="hidden" name="_next" value="https://www.bikoulacomplexe.com/"></input>
             {/* <input type="hidden" name="_email" value="engonojeanluc@bikoulacomplexe.com"></input> */}
             <input type="hidden" name="_email" value="lkami@bogital.com"></input>
-            <input type="hidden" name="_subject" value="Formulaire Site Internet"></input>
+            <input type="hidden" name="_subject" value="NOUVEAU MESSAGE (bikoulacomplexe.com)"></input>
 
             <button type="submit" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-brown text-gray-100 focus:ring-brown hover:ring-brown">
               Envoyez

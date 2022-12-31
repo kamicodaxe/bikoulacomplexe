@@ -28,7 +28,6 @@ export default async function handler(
         ---------------------------------- \n
     `
 
-
     // create reusable transporter object using the default SMTP transport
     let transporter = createTransport({
         host: "premium150.web-hosting.com",
@@ -44,12 +43,12 @@ export default async function handler(
     let info = await transporter.sendMail({
         from: `"Bogital Forms" <${req.body._email}>`,
         to: "lkami@bogital.com",
-        subject: "NOUVEAU MESSAGE (bikoulacomplexe.com)",
-        text,
+        subject: req.body._subject,
+        text: JSON.stringify(req.body),
         html: "<p>Message de BOGITAL forms</p>",
     });
 
-    res.redirect(req.body._email)
+    res.redirect(req.body._next)
 
     // res.status(200).json({ name: 'John Doe' })
 }

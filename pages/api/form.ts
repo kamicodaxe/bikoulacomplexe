@@ -15,19 +15,6 @@ export default async function handler(
     console.log(req.body)
     console.log(req.query)
 
-    const text = `
-        NOUVEAU MESSAGE
-        NOM: ${req.body.name} \n
-        ---------------------------------- \n
-        Téléphone: ${req.body.phone} \n
-        ---------------------------------- \n
-        Email: ${req.body.email} \n
-        ---------------------------------- \n
-        Message: \n
-        ${req.body.message} \n
-        ---------------------------------- \n
-    `
-
     // create reusable transporter object using the default SMTP transport
     let transporter = createTransport({
         host: "premium150.web-hosting.com",
@@ -44,8 +31,21 @@ export default async function handler(
         from: `"Bogital Forms" <${req.body._email}>`,
         to: "lkami@bogital.com",
         subject: req.body._subject,
-        text: JSON.stringify(req.body),
-        html: "<p>Message de BOGITAL forms</p>",
+        text: "",
+        html: `
+            <h3>Message de BOGITAL forms</h3>
+            <hr />
+            <p>NOM: ${req.body.name}</p>
+            <hr />
+            <p>Téléphone: ${req.body.phone}</p>
+            <hr />
+            <p>Email: ${req.body.email}</p>
+            <hr />
+            <p>Message:</p>
+            <p>${req.body.message}</p>
+            <hr />
+            <h3>Message de BOGITAL forms</h3>
+        `,
     });
 
     res.redirect(req.body._next)

@@ -15,15 +15,16 @@ import NavBar from '../../components/NavBar';
 // import ReactPlayer from 'react-player'
 
 interface IArticle {
-    id: string,
-    slug: string,
+    id: string
+    slug: string
+    title: string
     coverImage: {
         url: string
         alt: string
     },
-    author: string,
-    date: number,
-    _firstPublishedAt: number,
+    author: string
+    date: number
+    _firstPublishedAt: number
     desc: string
 }
 
@@ -38,9 +39,9 @@ const Article: NextPage<Props> = ({ data }) => {
     // const isFr = useMemo(() => (locale || '').toLowerCase().includes('fr'), [locale])
     const isFr = true
     const article = useMemo(() => data.article, [data])
-    const pageTitle = isFr ? "Titre de l'article" : "Blog"
     const title = "Article"
     const desc = "Article"
+
     // const galleryTitle = isFr ? "Galerie" : "Gallery"
 
     // const renderItem = (src: string) => {
@@ -52,7 +53,7 @@ const Article: NextPage<Props> = ({ data }) => {
         <Layout title={title} desc={desc}>
             <NavBar active="blog" />
             {/* <Header title={pageTitle} subtitle={title} /> */}
-            <Header title={pageTitle} />
+            <Header title={article.title} />
             <section className="container flex flex-col items-center max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
                 {
                     article.coverImage && (
@@ -162,7 +163,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 // export const getStaticPaths: GetStaticPaths = async (context) => {
-export const getStaticPaths = async (context) => {
+export const getStaticPaths = async (context: any) => {
     // const data = await request<IData>({
     //     query: ARTICLES_QUERY(context.defaultLocale as string),
     //     variables: {

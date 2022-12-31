@@ -10,16 +10,17 @@ import NavBar from '../../components/NavBar'
 interface Props {
     data: {
         allArticles: {
-            id: "string",
-            slug: "string",
+            id: string
+            slug: string
+            title: string
             coverImage: {
-                url: "string"
-                alt: "string"
+                url: string
+                alt: string
             },
-            author: "string",
-            date: "number",
-            _firstPublishedAt: "number",
-            desc: "string"
+            author: string
+            date: number
+            _firstPublishedAt: number
+            desc: string
         }[]
     }
 }
@@ -74,6 +75,7 @@ export const allArticles = [
     {
         id: "a",
         slug: "article",
+        title: "Titre de l'article",
         coverImage: {
             url: "https://source.unsplash.com/random/1280x720",
             alt: 'alt text'
@@ -86,6 +88,7 @@ export const allArticles = [
     {
         id: "b",
         slug: "article",
+        title: "Titre de l'article",
         coverImage: {
             url: "https://source.unsplash.com/random/1280x721",
             alt: 'alt text'
@@ -98,6 +101,7 @@ export const allArticles = [
     {
         id: "c",
         slug: "article",
+        title: "Titre de l'article",
         coverImage: {
             url: "https://source.unsplash.com/random/1280x722",
             alt: 'alt text'

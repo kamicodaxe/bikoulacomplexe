@@ -74,30 +74,32 @@ const Contact: NextPage = () => {
           </div>
           <form
             className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
-            action="https://formsubmit.co/info@bikoulacomplexe.com" method="POST"
+            action="https://bikoulacomplexe.com/api/form" method="POST"
           >
             <label className="block">
               <span className="mb-1">Noms et Prénoms</span>
               <input
-                name="Noms" type="text"
+                name="name" type="text"
                 placeholder="Leroy Jenkins"
                 className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800" />
             </label>
             <label className="block">
               <span className="mb-1">Numéro de Téléphone</span>
-              <input name="Téléphone" type="phone" placeholder="+1 (840) 541-2563" className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800" />
+              <input name="phone" type="phone" placeholder="+1 (840) 541-2563" className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800" />
             </label>
             <label className="block">
               <span className="mb-1">Adresse Email</span>
-              <input name="Email" type="email" placeholder="leroy@jenkins.com" className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800" />
+              <input name="email" type="email" placeholder="leroy@jenkins.com" className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800" />
             </label>
             <label className="block">
               <span className="mb-1">Message</span>
-              <textarea name="Message" rows={5} className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800"></textarea>
+              <textarea name="message" rows={5} className="block w-full rounded-md border-b border-white focus:outline-none focus:border-brown bg-gray-800"></textarea>
             </label>
 
             <input type="hidden" name="_next" value="https://www.bikoulacomplexe.com/"></input>
-            <input type="hidden" name="_subject" value="Formulaire Site Internet"></input>
+            <input type="hidden" name="_email" value="info@bikoulacomplexe.com"></input>
+            {/* <input type="hidden" name="_email" value="lkami@bogital.com"></input> */}
+            <input type="hidden" name="_subject" value="NOUVEAU MESSAGE (bikoulacomplexe.com)"></input>
 
             <button type="submit" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-brown text-gray-100 focus:ring-brown hover:ring-brown">
               Envoyez

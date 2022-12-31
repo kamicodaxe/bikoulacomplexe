@@ -14,6 +14,7 @@ interface Props {
             slug: "string",
             coverImage: {
                 url: "string"
+                alt: "string"
             },
             author: "string",
             date: "number",
@@ -74,7 +75,8 @@ export const allArticles = [
         id: "a",
         slug: "article",
         coverImage: {
-            url: "https://source.unsplash.com/random/1280x720"
+            url: "https://source.unsplash.com/random/1280x720",
+            alt: 'alt text'
         },
         author: "Bikoula Complexe ",
         date: Date.now(),
@@ -85,7 +87,8 @@ export const allArticles = [
         id: "b",
         slug: "article",
         coverImage: {
-            url: "https://source.unsplash.com/random/1280x721"
+            url: "https://source.unsplash.com/random/1280x721",
+            alt: 'alt text'
         },
         author: "Bikoula Complexe",
         date: Date.now(),
@@ -96,7 +99,8 @@ export const allArticles = [
         id: "c",
         slug: "article",
         coverImage: {
-            url: "https://source.unsplash.com/random/1280x722"
+            url: "https://source.unsplash.com/random/1280x722",
+            alt: 'alt text'
         },
         author: "Bikoula Complexe ",
         date: Date.now(),

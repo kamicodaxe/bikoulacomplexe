@@ -15,15 +15,16 @@ import NavBar from '../../components/NavBar';
 // import ReactPlayer from 'react-player'
 
 interface IArticle {
-    id: "string",
-    slug: "string",
+    id: string,
+    slug: string,
     coverImage: {
-        url: "string"
+        url: string
+        alt: string
     },
-    author: "string",
-    date: "number",
-    _firstPublishedAt: "number",
-    desc: "string"
+    author: string,
+    date: number,
+    _firstPublishedAt: number,
+    desc: string
 }
 
 interface Props {

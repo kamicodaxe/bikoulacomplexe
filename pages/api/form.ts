@@ -51,5 +51,6 @@ export default async function handler(
     console.log(info)
 
     res.writeHead(301, { Location: req.body._next })
+    return res.end()
     
 }

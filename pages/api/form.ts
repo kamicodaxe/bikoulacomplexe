@@ -33,8 +33,6 @@ export default async function handler(
         subject: req.body._subject,
         text: "",
         html: `
-            <h3>Message de BOGITAL forms</h3>
-            <hr />
             <p>Noms et Prénoms: ${req.body.name}</p>
             <hr />
             <p>Téléphone: ${req.body.phone}</p>
@@ -44,7 +42,9 @@ export default async function handler(
             <p>Message:</p>
             <p>${req.body.message}</p>
             <hr />
-            <h3>Message de BOGITAL forms</h3>
+            <br />
+            <br />
+            <h6>FORMS by bogital</h6>
         `,
     });
 
@@ -52,5 +52,5 @@ export default async function handler(
 
     res.writeHead(301, { Location: req.body._next })
     return res.end()
-    
+
 }

@@ -15,6 +15,20 @@ export default async function handler(
     console.log(req.body)
     console.log(req.query)
 
+    const text = `
+        NOUVEAU MESSAGE
+        NOM: ${req.body.name} \n
+        ---------------------------------- \n
+        Téléphone: ${req.body.phone} \n
+        ---------------------------------- \n
+        Email: ${req.body.email} \n
+        ---------------------------------- \n
+        Message: \n
+        ${req.body.message} \n
+        ---------------------------------- \n
+    `
+
+
     // create reusable transporter object using the default SMTP transport
     let transporter = createTransport({
         host: "premium150.web-hosting.com",
@@ -28,14 +42,14 @@ export default async function handler(
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-        from: '"Farhan from Coding Day - Testing" <forms@bogital.com>', // sender address
-        to: "lkami@bogital.com", // list of receivers
-        subject: "Formulaire Site internet", // Subject line
-        text: "Coding Day?", // plain text body
-        html: "<h1>Coding Day</h1>", // html body
+        from: `"Bogital Forms" <${req.body._email}>`,
+        to: "lkami@bogital.com",
+        subject: "NOUVEAU MESSAGE (bikoulacomplexe.com)",
+        text,
+        html: "<p>Message de BOGITAL forms</p>",
     });
 
-    res.redirect('https://bikoulacomplexe.com')
+    res.redirect(req.body._email)
 
     // res.status(200).json({ name: 'John Doe' })
 }

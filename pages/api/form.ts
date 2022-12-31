@@ -35,7 +35,7 @@ export default async function handler(
         html: `
             <h3>Message de BOGITAL forms</h3>
             <hr />
-            <p>NOM: ${req.body.name}</p>
+            <p>Noms et Prénoms: ${req.body.name}</p>
             <hr />
             <p>Téléphone: ${req.body.phone}</p>
             <hr />
@@ -48,7 +48,8 @@ export default async function handler(
         `,
     });
 
-    res.redirect(req.body._next)
+    console.log(info)
 
-    // res.status(200).json({ name: 'John Doe' })
+    res.writeHead(301, { Location: req.body._next })
+    
 }

@@ -41,7 +41,7 @@ const NavBar: React.FC<Props> = ({ active }) => {
                         <div className="h-12 w-12 relative">
                             <Image layout="fill" src={require('../assets/images/logo.png')} alt="Logo Bikoula Complexe" />
                         </div>
-                        <h2 className="text-2xl font-bold text-brown">GROUPE BIKOULA COMPLEXE</h2>
+                        <h2 className="text-2xl font-bold text-brown">GROUPE BIKOULA COMPLEXE HOLDING</h2>
                     </div>
                 </Link>
                 <ul className="items-stretch hidden space-x-3 md:flex">

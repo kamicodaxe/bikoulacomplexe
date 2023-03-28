@@ -61,9 +61,11 @@ const Contact: NextPage = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                 </svg>
-                {
-                  contactInfo.tel.map(contact => <span key={contact}>{contact}</span>)
-                }
+                <div>
+                  {
+                    contactInfo.tel.map(contact => <span key={contact} className="block">{contact}</span>)
+                  }
+                </div>
               </p>
               <p className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
@@ -116,6 +118,14 @@ const Contact: NextPage = () => {
 const CONTACT_INFOS = [
   {
     address: [
+      "Siège social : Quartier Monavebe, BP 729 Sangmelima, Cameroun",
+      "RCCM : RC/EBWA/2022/B/129/"
+    ],
+    tel: ["Bureau: (+33) 9 62 59 36 76", "Portable 1: (+33) 7 87 83 71 93", "Portable 2: (+33) 6 63 87 54 46"],
+    email: "info@bikoulacomplexe.com"
+  },
+  {
+    address: [
       "Siège fonctionnel: 15 Rue Antoine de Saint-Exupéry",
       "94270 Le Kremlin-Bicêtre, France",
       "N° SIRET : 79931625200029"
@@ -123,14 +133,7 @@ const CONTACT_INFOS = [
     tel: ["Bureau: (+33) 9 62 59 36 76", "Portable 1: (+33) 7 87 83 71 93", "Portable 2: (+33) 6 63 87 54 46"],
     email: "info@bikoulacomplexe.com"
   },
-  {
-    address: [
-      "Siège social : Quartier Monavebe, BP 729 Sangmelima, Cameroun",
-      "RCCM : RC/EBWA/2022/B/129/"
-    ],
-    tel: ["Bureau: (+33) 9 62 59 36 76", "Portable 1: (+33) 7 87 83 71 93", "Portable 2: (+33) 6 63 87 54 46"],
-    email: "info@bikoulacomplexe.com"
-  },
+
 ]
 
 export default Contact

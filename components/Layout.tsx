@@ -8,7 +8,7 @@ interface Props extends React.PropsWithChildren {
 }
 
 const Layout: React.FC<Props> = ({ children }) => {
-    const title = "Groupe Bikoula Complexe"
+    const title = "Groupe Bikoula Complexe Holding"
     const desc = "Nous sommes le lien entre l'Afrique et l'Occident pour toutes les entreprises désireuses de s'implanter sur le continent africain. Nous vous garantissons la mise en relation et la meilleure approche avec les acteurs économiques privés et publics. Vous bénéficiez d'un carnet d'adresse fiable pour la réussite de vos projets. Nous vous accompagnons dans la recherche des financières, des potentiels investisseurs et groupes d'investissement à obtenir des financements auprès des instituts financiers. Nous sommes notamment spécialistes de l'Afrique dans l'accompagnement et le conseil du secteur public et privé et des porteurs de projets."
     const lang = "fr"
     const favIcon = "/favicon.ico"

@@ -36,8 +36,8 @@ const Contact: NextPage = () => {
               <div className="flex justify-center items-center">
                 {
                   [
-                    "France",
                     "Cameroun",
+                    "France",
                   ].map((title, index) => (
                     <span
                       key={title}
@@ -55,7 +55,9 @@ const Contact: NextPage = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path>
                 </svg>
-                {contactInfo.address.map(title => <span key={title}>{title}</span>)}
+                <div>
+                  {contactInfo.address.map(title => <span key={title} className="block">{title} </span>)}
+                </div>
               </p>
               <p className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
@@ -119,7 +121,8 @@ const CONTACT_INFOS = [
   {
     address: [
       "Siège social : Quartier Monavebe, BP 729 Sangmelima, Cameroun",
-      "RCCM : RC/EBWA/2022/B/129/"
+      "RCCM : RC/EBWA/2022/B/129/",
+      "NIU : M062217398927P"
     ],
     tel: ["Bureau: (+33) 9 62 59 36 76", "Portable 1: (+33) 7 87 83 71 93", "Portable 2: (+33) 6 63 87 54 46"],
     email: "info@bikoulacomplexe.com"

@@ -118,7 +118,7 @@ const CONTACT_INFOS = [
       "94270 Le Kremlin-Bicêtre, France",
       "N° SIRET : 79931625200029"
     ],
-    tel: "Bureau: (+33) 9 62 59 36 76 | Portable: (+33) 6 63 87 54 46",
+    tel: "Bureau: (+33) 9 62 59 36 76 | Portable 1: (+33) 6 63 87 54 46 | Portable 2: (+33) 7 87 83 71 93",
     email: "info@bikoulacomplexe.com"
   },
   {
@@ -126,7 +126,7 @@ const CONTACT_INFOS = [
       "Siège social : Quartier Monavebe, BP 729 Sangmelima, Cameroun",
       "RCCM : RC/EBWA/2022/B/129/"
     ],
-    tel: "Bureau: (+33) 9 62 59 36 76 | Portable: (+33) 6 63 87 54 46 |  WhatsApp: (+237) 651 886 742",
+    tel: "Bureau: (+33) 9 62 59 36 76 | Portable: (+33) 6 63 87 54 46",
     email: "info@bikoulacomplexe.com"
   },
 ]

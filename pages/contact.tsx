@@ -61,7 +61,9 @@ const Contact: NextPage = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
                 </svg>
-                <span>{contactInfo.tel}</span>
+                {
+                  contactInfo.tel.map(contact => <span key={contact}>{contact}</span>)
+                }
               </p>
               <p className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6">
@@ -118,7 +120,7 @@ const CONTACT_INFOS = [
       "94270 Le Kremlin-Bicêtre, France",
       "N° SIRET : 79931625200029"
     ],
-    tel: "Bureau: (+33) 9 62 59 36 76 | Portable 1: (+33) 6 63 87 54 46 | Portable 2: (+33) 7 87 83 71 93",
+    tel: ["Bureau: (+33) 9 62 59 36 76", "Portable 1: (+33) 7 87 83 71 93", "Portable 2: (+33) 6 63 87 54 46"],
     email: "info@bikoulacomplexe.com"
   },
   {
@@ -126,7 +128,7 @@ const CONTACT_INFOS = [
       "Siège social : Quartier Monavebe, BP 729 Sangmelima, Cameroun",
       "RCCM : RC/EBWA/2022/B/129/"
     ],
-    tel: "Bureau: (+33) 9 62 59 36 76 | Portable: (+33) 6 63 87 54 46",
+    tel: ["Bureau: (+33) 9 62 59 36 76", "Portable 1: (+33) 7 87 83 71 93", "Portable 2: (+33) 6 63 87 54 46"],
     email: "info@bikoulacomplexe.com"
   },
 ]

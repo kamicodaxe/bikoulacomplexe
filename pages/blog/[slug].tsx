@@ -87,7 +87,7 @@ const Article: NextPage<Props> = ({ data }) => {
                                 if (_node.type == 'list') return (
                                     <ul key={i}>
                                         {
-                                            // Git ignore
+                                            // @ts-ignore
                                             _node.content.map(_listItem => (
                                                 <li key={i}>
                                                     <h4>{_listItem.title}</h4>

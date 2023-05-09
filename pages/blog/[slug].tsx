@@ -23,6 +23,7 @@ interface IArticle {
         alt: string
     },
     author: string
+    content: any[]
     date: number
     _firstPublishedAt: number
     desc: string
@@ -50,10 +51,10 @@ const Article: NextPage<Props> = ({ data }) => {
     // }
 
     return (
-        <Layout title={title} desc={desc}>
+        <Layout title={"Comment réussir votre implantation en Afrique grâce à Bikoula Complexe?"} desc={"Lorsqu'une entreprise décide de s'implanter sur un nouveau marché, cela peut être à la fois excitant et effrayant. Cela est particulièrement vrai pour les entreprises qui cherchent à s'implanter en Afrique, un continent diversifié et complexe avec des cultures et des réglementations différentes de celles de l'Occident. Cependant, avec l'aide de Bikoula Complexe, il est possible de réussir votre implantation en Afrique."}>
             <NavBar active="blog" />
             {/* <Header title={pageTitle} subtitle={title} /> */}
-            <Header title={article.title} />
+            <Header title={"Blog"} />
             <section className="container flex flex-col items-center max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
                 {
                     article.coverImage && (
@@ -68,8 +69,8 @@ const Article: NextPage<Props> = ({ data }) => {
                 {/* Content */}
                 <div className="block max-w-sm  mx-auto sm:max-w-2xl group text-gray-800 font-sans text-lg">
 
-                    <div className="space-y-4 text-justify">
-                        <h3 className="text-2xl font-semibold sm:text-4xl group-focus:underline">{article.title}</h3>
+                    <div className="space-y-4 text-justify prose lg:prose-xl">
+                        <h3 className="text-2xl font-semibold sm:text-4xl group-focus:underline">Comment réussir votre implantation en Afrique grâce à Bikoula Complexe?</h3>
                         {
                             article.author && (
                                 <>
@@ -80,25 +81,25 @@ const Article: NextPage<Props> = ({ data }) => {
                         }
                         <span className="text-xs text-gray-400">{new Date(article?.date).toLocaleDateString()}</span>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel metus odio. Curabitur erat urna, tincidunt non odio id, ullamcorper vestibulum arcu. Phasellus sagittis pharetra dictum. Aliquam nibh ipsum, pellentesque quis suscipit vitae, blandit eget tortor. Morbi ultricies ac ligula at consequat. Aliquam erat volutpat. Donec nec purus maximus, mattis risus et, gravida tellus. Vestibulum quis condimentum risus. Nam imperdiet nunc leo, id venenatis turpis hendrerit sit amet. Praesent fringilla feugiat massa eget tempus. Proin eget tortor tellus.
-                        </p>
-
-                        <p>
-                            Mauris elementum est felis, sodales lacinia risus consectetur consequat. Vestibulum aliquet est dignissim fermentum pharetra. Nunc sed turpis quis mi fringilla egestas sed vitae dolor. Donec id blandit risus. Aliquam erat volutpat. Nam in ultrices nisl. Nulla facilisis convallis dui, nec dictum diam dignissim ac. Nam aliquet est lorem, eleifend lobortis libero molestie sit amet.
-                        </p>
-
-                        <p>
-                            In interdum, dolor ac pharetra semper, lectus elit eleifend ligula, quis convallis enim turpis et nunc. Mauris aliquet, felis et interdum cursus, quam erat sagittis ante, quis porttitor augue ex ut neque. Maecenas vehicula magna mi, eget rhoncus lorem imperdiet id. Duis vulputate erat ac quam pretium, in venenatis lectus egestas. Curabitur finibus faucibus pellentesque. Pellentesque luctus ante a orci congue, vitae interdum tellus aliquam. Morbi varius tristique magna, quis varius orci tempor pulvinar. Vivamus maximus blandit arcu, ac vehicula neque facilisis pulvinar. Suspendisse lacinia ipsum elit, eget lobortis erat fermentum tincidunt. Nunc mattis nisi urna, vitae pretium ipsum venenatis sit amet. Donec euismod rhoncus aliquam. Donec nec sem sed augue ullamcorper gravida. Pellentesque scelerisque metus ipsum, eget elementum mi sollicitudin at. In ac interdum metus, ac accumsan lorem. Quisque id lacinia risus. Maecenas id enim ut magna consequat luctus a eu nulla.
-                        </p>
-
-                        <p>
-                            Pellentesque a metus eget quam ultrices placerat ac ut nibh. Suspendisse gravida magna sit amet ligula vehicula faucibus. Suspendisse vulputate mattis varius. Cras nulla arcu, imperdiet sed fringilla non, auctor a ligula. Aliquam purus orci, euismod et venenatis vel, suscipit accumsan nunc. Sed nec felis et eros bibendum varius. Vivamus dui lectus, viverra et lacus nec, cursus molestie metus. Praesent commodo sem nulla, sed ullamcorper elit interdum vel. Duis luctus ex eget ligula pharetra, et bibendum purus euismod. Curabitur lacus mi, venenatis id ultrices ut, pellentesque quis metus. Suspendisse mollis euismod efficitur. Duis varius metus tortor, vitae faucibus ligula cursus vitae. Morbi ullamcorper nibh non risus facilisis, in volutpat dolor tempus. Morbi porttitor finibus accumsan. Mauris consequat ornare risus sit amet rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-                        </p>
-
-                        <p>
-                            Fusce id ultricies arcu. Vivamus porttitor libero non eros viverra scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed egestas nisl eu rhoncus finibus. Donec semper nisl sed risus dignissim, at molestie nisl laoreet. Duis placerat vehicula ex id fringilla. Nam molestie ex at fermentum congue. Nullam in odio sed lectus convallis finibus vitae at metus. Nam porta enim in scelerisque consectetur. Praesent vel malesuada justo, in facilisis leo. Praesent quis auctor mauris, sed tempus dui. Nam in euismod tellus.
-                        </p>
+                        {
+                            article.content.map((_node, i) => {
+                                if (_node.type == "text") return <p key={i}>{_node.content}</p>
+                                if (_node.type == 'list') return (
+                                    <ul key={i}>
+                                        {
+                                            // Git ignore
+                                            _node.content.map(_listItem => (
+                                                <li key={i}>
+                                                    <h4>{_listItem.title}</h4>
+                                                    <p>{_listItem.content}</p>
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                )
+                                return <></>
+                            })
+                        }
 
                         {/* <StructuredText
                             data={article.body}

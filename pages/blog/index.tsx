@@ -74,43 +74,57 @@ const News: NextPage<Props> = ({ data }) => {
 export const allArticles = [
     {
         id: "a",
-        slug: "article",
-        title: "Titre de l'article",
+        slug: "comment-réussir-votre-implantation-en-afrique-grâce-à-bikoula-complexe",
+        title: "Comment réussir votre implantation en Afrique grâce à Bikoula Complexe?",
         coverImage: {
-            url: "https://source.unsplash.com/random/1280x720",
+            url: "https://source.unsplash.com/mrzjGCHdtLI/1280x720",
             alt: 'alt text'
         },
         author: "Bikoula Complexe ",
         date: Date.now(),
         _firstPublishedAt: Date.now(),
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel metus odio. Curabitur erat urna, tincidunt non odio id, ullamcorper vestibulum arcu. Phasellus sagittis pharetra dictum. Aliquam nibh ipsum, pellentesque quis suscipit vitae, blandit eget tortor. Morbi ultricies ac ligula at consequat."
+        desc: "Lorsqu'une entreprise décide de s'implanter sur un nouveau marché, cela peut être à la fois excitant et effrayant. Cela est particulièrement vrai pour les entreprises qui cherchent à s'implanter en Afrique, un continent diversifié et complexe avec des cultures et des réglementations différentes de celles de l'Occident. Cependant, avec l'aide de Bikoula Complexe, il est possible de réussir votre implantation en Afrique.",
+        content: [
+            {
+                type: "text",
+                content: "Lorsqu'une entreprise décide de s'implanter sur un nouveau marché, cela peut être à la fois excitant et effrayant. Cela est particulièrement vrai pour les entreprises qui cherchent à s'implanter en Afrique, un continent diversifié et complexe avec des cultures et des réglementations différentes de celles de l'Occident. Cependant, avec l'aide de Bikoula Complexe, il est possible de réussir votre implantation en Afrique."
+            },
+            {
+                type: "text",
+                content: "En tant qu'entreprise spécialisée dans l'accompagnement des entreprises souhaitant s'implanter en Afrique, Bikoula Complexe offre une multitude de services pour aider les entreprises à réussir leur implantation sur le continent africain. Voici quelques conseils pratiques pour les entreprises qui cherchent à s'implanter en Afrique avec l'aide de Bikoula Complexe."
+            },
+            {
+                type: "list",
+                content: [
+                    {
+                        title: "Comprendre le marché et la culture locale",
+                        content: "Pour réussir une implantation en Afrique, il est essentiel de comprendre le marché et la culture locale. Bikoula Complexe peut aider les entreprises à comprendre les spécificités du marché africain et à s'adapter à la culture locale. Ils disposent d'un réseau fiable et structuré pour vous aider à vous connecter avec les acteurs économiques privés et publics dans chaque pays."
+                    },
+                    {
+                        title: "Identifier les opportunités d'affaires",
+                        content: "Bikoula Complexe peut aider les entreprises à identifier les opportunités d'affaires en Afrique. Ils sont spécialistes de l'Afrique dans l'accompagnement et le conseil du secteur public et privé et des porteurs de projets. Ils peuvent vous aider à trouver les secteurs porteurs et les projets les plus prometteurs pour votre entreprise. Ils peuvent également vous aider à évaluer les risques potentiels et à mettre en place une stratégie adaptée."
+                    },
+                    {
+                        title: "Trouver des partenaires locaux",
+                        content: "Pour réussir une implantation en Afrique, il est souvent nécessaire de trouver des partenaires locaux fiables. Bikoula Complexe dispose d'un vaste réseau de partenaires locaux et peut vous aider à trouver les partenaires les plus adaptés à votre projet. Ils peuvent également vous aider à négocier des contrats et à gérer les relations avec vos partenaires locaux."
+                    },
+                    {
+                        title: "Obtenir les autorisations nécessaires",
+                        content: "L'obtention des autorisations nécessaires pour s'implanter en Afrique peut être complexe. Bikoula Complexe peut vous aider à naviguer le processus d'obtention des autorisations nécessaires pour votre entreprise, que ce soit des permis de travail, des licences commerciales ou autres. Ils peuvent également vous aider à comprendre les réglementations locales et les exigences fiscales pour votre entreprise."
+                    },
+                    {
+                        title: "Trouver des financements",
+                        content: "Bikoula Complexe peut également aider les entreprises à trouver des financements pour leur projet en Afrique. Ils peuvent vous aider à trouver les investisseurs les plus adaptés à votre projet et à négocier des conditions avantageuses. Ils peuvent également vous aider à identifier les sources de financement locales et à vous accompagner dans la recherche de subventions et d'autres formes d'aide financière."
+                    },
+                ]
+            },
+            {
+                type: "text",
+                content: "En conclusion, s'implanter en Afrique peut être une expérience stimulante et gratifiante pour les entreprises, mais cela peut également être un processus complexe et risqué. C'est pourquoi il est essentiel de travailler avec des experts locaux tels que Bikoula Complexe, qui peuvent aider les entreprises à comprendre le marché africain, à identifier les opportunités d'affaires, à trouver des partenaires locaux fiables, à obtenir les autorisations nécessaires et à trouver des financements pour leur projet. Avec l'aide de Bikoula Complexe, vous pouvez réussir votre implantation en Afrique et tirer parti des nombreuses opportunités qu'offre ce marché dynamique et en croissance rapide."
+            },
+
+        ]
     },
-    {
-        id: "b",
-        slug: "article",
-        title: "Titre de l'article",
-        coverImage: {
-            url: "https://source.unsplash.com/random/1280x721",
-            alt: 'alt text'
-        },
-        author: "Bikoula Complexe",
-        date: Date.now(),
-        _firstPublishedAt: Date.now(),
-        desc: "In interdum, dolor ac pharetra semper, lectus elit eleifend ligula, quis convallis enim turpis et nunc. Mauris aliquet, felis et interdum cursus, quam erat sagittis ante, quis porttitor augue ex ut neque. Maecenas vehicula magna mi, eget rhoncus lorem imperdiet id. Duis vulputate erat ac quam pretium, in venenatis lectus egestas. Curabitur finibus faucibus pellentesque. Pellentesque luctus ante a orci congue, vitae interdum tellus aliquam. Morbi varius tristique magna, quis varius orci tempor pulvinar. Vivamus maximus blandit arcu, ac vehicula neque facilisis pulvinar."
-    },
-    {
-        id: "c",
-        slug: "article",
-        title: "Titre de l'article",
-        coverImage: {
-            url: "https://source.unsplash.com/random/1280x722",
-            alt: 'alt text'
-        },
-        author: "Bikoula Complexe ",
-        date: Date.now(),
-        _firstPublishedAt: Date.now(),
-        desc: "Pellentesque a metus eget quam ultrices placerat ac ut nibh. Suspendisse gravida magna sit amet ligula vehicula faucibus. Suspendisse vulputate mattis varius. Cras nulla arcu, imperdiet sed fringilla non, auctor a ligula. Aliquam purus orci, euismod et venenatis vel, suscipit accumsan nunc."
-    }
 ]
 
 export const getStaticProps: GetStaticProps = async (context) => {

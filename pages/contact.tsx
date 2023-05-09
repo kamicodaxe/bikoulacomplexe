@@ -125,7 +125,8 @@ const CONTACT_INFOS = [
       "NIU : M062217398927P"
     ],
     tel: ["Bureau: (+33) 9 62 59 36 76", "Portable 1: (+33) 7 87 83 71 93", "Portable 2: (+33) 6 63 87 54 46"],
-    email: "info@bikoulacomplexe.com"
+    // email: "info@bikoulacomplexe.com",
+    email: "bikoulacomplexe@outlook.com"
   },
   {
     address: [

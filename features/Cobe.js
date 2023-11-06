@@ -113,36 +113,36 @@ export default function Cobe({ isVisible }) {
         window.addEventListener('resize', onResize)
         onResize()
         const globe = createGlobe(canvasRef.current, {
-            devicePixelRatio: 2,
-            width: width * 2,
-            height: width * 2,
-            phi: 0,
-            theta: 0.3,
-            dark: 0.8,
-            diffuse: 1,
-            mapSamples: 16000,
-            mapBrightness: 1,
-            baseColor: [96 / 255, 139 / 255, 132 / 255],
-            markerColor: [251 / 255, 100 / 255, 21 / 255],
-            glowColor: [99 / 255, 99 / 255, 99 / 255],
-            markers: [
-                { location: [37.7595, -122.4367], size: 0.03 },
-                { location: [40.7128, -74.006], size: 0.1 },
-                { location: [3.86667, 11.51667], size: 0.05 },
-                { location: [48.856614, 2.3522219], size: 0.05 },
-                { location: [3.86667, 11.51667], size: 0.05 },
-                { location: [14.497401, -14.452362], size: 0.05 },
-            ],
-            onRender: (state) => {
-                // Called on every animation frame.
-                // `state` will be an empty object, return updated params.
-                state.phi = phi.current
-                if (isVisible) phi.current += 0.0095
-                if (state.width != width * 2) state.width = width * 2
-                if (state.height != width * 2) state.height = width * 2
-
-            }
-        })
+          devicePixelRatio: 2,
+          width: width * 2,
+          height: width * 2,
+          phi: 0,
+          theta: 0.3,
+          dark: 0.8,
+          diffuse: 1,
+          mapSamples: 16000,
+          mapBrightness: 1,
+          baseColor: [96 / 255, 139 / 255, 132 / 255],
+          markerColor: [251 / 255, 100 / 255, 21 / 255],
+          glowColor: [99 / 255, 99 / 255, 99 / 255],
+          markers: [
+            { location: [37.7595, -122.4367], size: 0.03 },
+            { location: [40.7128, -74.006], size: 0.1 },
+            { location: [3.86667, 11.51667], size: 0.05 },
+            { location: [48.856614, 2.3522219], size: 0.05 },
+            { location: [3.86667, 11.51667], size: 0.05 },
+            { location: [14.497401, -14.452362], size: 0.05 },
+            { location: [14.497401, -14.452362], size: 0.05 },
+          ],
+          onRender: (state) => {
+            // Called on every animation frame.
+            // `state` will be an empty object, return updated params.
+            state.phi = phi.current;
+            if (isVisible) phi.current += 0.0095;
+            if (state.width != width * 2) state.width = width * 2;
+            if (state.height != width * 2) state.height = width * 2;
+          },
+        });
         setTimeout(() => {
             if (canvasRef.current?.style?.opacity) canvasRef.current.style.opacity = '1'
         })

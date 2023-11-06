@@ -4,11 +4,11 @@ const ProblemsWeSolve: React.FC<{}> = ({ }) => {
 
     return (
         <section className="bg-gray-800 text-gray-100">
-            <div className="container max-w-xl p-6 py-16 mx-auto space-y-12 lg:px-8 lg:max-w-7xl">
-                {/* <div>
-                    <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-gray-50">Problems we solve</h2>
-                    <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-400">Quando cetero his ne, eum admodum sapientem ut.</p>
-                </div> */}
+            <div className="container p-6 sm:py-12 lg:py-24 mx-auto space-y-12 lg:px-8">
+                <div>
+                    <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-gray-50">Nos solutions</h2>
+                    {/* <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-400">Quando cetero his ne, eum admodum sapientem ut.</p> */}
+                </div>
                 <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                     <div>
                         {/* <h3 className="text-2xl font-bold tracking-tight sm:text-3xl text-gray-50">Ad vix debet docendi</h3> */}
@@ -18,9 +18,9 @@ const ProblemsWeSolve: React.FC<{}> = ({ }) => {
                                 [
                                     "Evaluation et stratégie de l’équipe de vente ;",
                                     "Nous vous aidons à trouver des fournisseurs de matière première en Afrique ;",
-                                    "Le GROUPE BIKOULA COMPLEXE vous assiste dans le déploiement de votre activité en Afrique ;",
+                                    "Le Bikoula Complexe International Consulting vous assiste dans le déploiement de votre activité en Afrique ;",
                                     "Planification efficace, établissement de buts et d’objectifs et prévisions ;",
-                                    "Le GROUPE BIKOULA COMPLEXE vous aide dans la recherche des investisseurs et des capitaux pour financer vos projets ;",
+                                    "Le Bikoula Complexe International Consulting vous aide dans la recherche des investisseurs et des capitaux pour financer vos projets ;",
                                     "Nous vous présenterons les meilleures opportunités d'investissements en Afrique."
                                 ].map(title => (
                                     <div className="flex align-center" key={title}>
@@ -32,8 +32,8 @@ const ProblemsWeSolve: React.FC<{}> = ({ }) => {
                                             </div>
                                         </div>
                                         <div className="ml-4">
-                                            <h4 className="text-lg font-medium leading-6 text-gray-50">{title}</h4>
-                                            {/* <p className="mt-2 text-gray-400">Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.</p> */}
+                                            <h4 className="text-lg md:text-base text-gray-50">{title}</h4>
+                                            {/* <p className="mt-2 text-gray-400">Description.</p> */}
                                         </div>
                                     </div>
                                 ))

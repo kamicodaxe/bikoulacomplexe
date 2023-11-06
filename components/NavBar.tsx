@@ -35,13 +35,16 @@ const NavBar: React.FC<Props> = ({ active }) => {
 
     return (
         <nav className="p-6 pb-0 bg-gray-800 text-gray-100">
-            <div className="container flex justify-between h-12 mx-auto">
+            <div className="
+            container flex justify-between md:h-12 
+            mx-auto py-6 sm:py-12 lg:flex-row items-center
+            ">
                 <Link href="/" aria-label="Back to homepage" className="flex items-center p-2">
-                    <div className="flex items-center">
-                        <div className="h-12 w-12 relative">
+                    <div className="flex items-center  cursor-pointer">
+                        <div className="h-16 w-16 object-cover relative">
                             <Image layout="fill" src={require('../assets/images/logo.png')} alt="Logo Bikoula Complexe" />
                         </div>
-                        <h2 className="text-2xl font-bold text-brown">GROUPE BIKOULA COMPLEXE HOLDING</h2>
+                        <h2 className="text-2xl font-bold text-brown">Bikoula Complexe <br /> <span className="hidden md:inline-block">International Consulting</span> </h2>
                     </div>
                 </Link>
                 <ul className="items-stretch hidden space-x-3 md:flex">

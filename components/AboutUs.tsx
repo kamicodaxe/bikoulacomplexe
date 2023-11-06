@@ -7,7 +7,7 @@ const AboutUs: React.FC<{}> = ({ }) => {
 
     return (
         <section className="">
-            <div className="container flex flex-col p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row">
+            <div className="container flex flex-col p-6 mx-auto py-12 lg:py-24 lg:flex-row">
                 <div className="flex flex-1 justify-center align-center">
                     <Image className='object-cover' width="300px" height="300px" src={logo} alt="Logo Bikoula Complexe" />
                 </div>

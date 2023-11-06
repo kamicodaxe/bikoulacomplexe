@@ -4,10 +4,10 @@ const Testimonials: React.FC<{}> = ({ }) => {
 
     return (
         <section className=" bg-gray-100 py-16">
-            
+
             <div className="container flex flex-col items-center mx-auto md:p-10 md:px-12">
-                <h2 className="text-4xl font-semibold leading-none text-center">
-                Ce que nos clients disent de nous
+                <h2 className="text-4xl font-bold leading-none text-center">
+                    Ce que nos clients disent de nous
                 </h2>
             </div>
 

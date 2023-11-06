@@ -6,7 +6,7 @@ const ProblemsWeSolve: React.FC<{}> = ({ }) => {
         <section className="bg-gray-800 text-gray-100">
             <div className="container p-6 sm:py-12 lg:py-24 mx-auto space-y-12 lg:px-8">
                 <div>
-                    <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl text-gray-50">Nos solutions</h2>
+                    <h2 className="text-4xl font-bold tracking-tight text-center text-gray-50">Nos solutions</h2>
                     {/* <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-400">Quando cetero his ne, eum admodum sapientem ut.</p> */}
                 </div>
                 <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">

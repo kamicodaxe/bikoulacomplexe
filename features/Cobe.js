@@ -103,7 +103,7 @@
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 
-export default function Cobe({ isVisible }) {
+export default function Cobe({ rotate }) {
     const canvasRef = useRef();
     const phi = useRef(0);
 
@@ -138,7 +138,7 @@ export default function Cobe({ isVisible }) {
             // Called on every animation frame.
             // `state` will be an empty object, return updated params.
             state.phi = phi.current;
-            if (isVisible) phi.current += 0.0095;
+            if (rotate) phi.current += 0.0095;
             if (state.width != width * 2) state.width = width * 2;
             if (state.height != width * 2) state.height = width * 2;
           },
@@ -147,7 +147,7 @@ export default function Cobe({ isVisible }) {
             if (canvasRef.current?.style?.opacity) canvasRef.current.style.opacity = '1'
         })
         return () => globe.destroy()
-    }, [isVisible])
+    }, [rotate])
 
     return <div style={{
         width: '100%',

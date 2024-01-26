@@ -9,7 +9,7 @@ const AboutCEO: React.FC<{}> = ({ }) => {
                 <div className="flex flex-1 flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
 
                     <div className="px-4 py-12 rounded-t-lg sm:px-4 md:px-6 bg-gray-900">
-                        <p className="relative py-1 text-lg italic text-center text-gray-100">
+                        <p className="relative py-1 text-lg md:text-base italic text-center text-gray-100">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 text-[#5D8B84]">
                                 <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                                 <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
@@ -28,7 +28,7 @@ const AboutCEO: React.FC<{}> = ({ }) => {
                     </div>
 
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex justify-center">
                     <Image src={ceoImage} height="512px" width="512px" alt="Groupe Bikoula Complexe CEO Jean-Luc ENGONO" className="rounded-full object-cover" />
                 </div>
 

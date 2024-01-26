@@ -52,7 +52,7 @@ const HomeHeader: React.FC<{}> = ({ }) => {
                             </span>
                         </Link>
                         <button>
-                            <Link href="/projets">
+                            <Link href="/projects">
                                 <span className="px-8 py-3 text-lg font-semibold rounded border-2 border-brown text-brown hover:cursor-pointer">
                                     Nos réalisations
                                 </span>

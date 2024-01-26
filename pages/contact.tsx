@@ -103,7 +103,7 @@ const Contact: NextPage = () => {
             </label>
 
             <input type="hidden" name="_next" value="https://www.bikoulacomplexe.com/"></input>
-            <input type="hidden" name="_email" value="info@bikoulacomplexe.com"></input>
+            <input type="hidden" name="_email" value="bikoulacomplexe@outlok.com"></input>
             {/* <input type="hidden" name="_email" value="lkami@bogital.com"></input> */}
             <input type="hidden" name="_subject" value="NOUVEAU MESSAGE (bikoulacomplexe.com)"></input>
 
@@ -120,22 +120,22 @@ const Contact: NextPage = () => {
 const CONTACT_INFOS = [
   {
     address: [
-      "Siège social : Quartier Monavebe, BP 729 Sangmelima, Cameroun",
+      "Quartier Monavebe, BP 729 Sangmelima, Cameroun",
       "RCCM : RC/EBWA/2022/B/129/",
       "NIU : M062217398927P"
     ],
-    tel: ["Bureau: (+33) 9 62 59 36 76", "Portable 1: (+33) 7 87 83 71 93", "Portable 2: (+33) 6 63 87 54 46"],
-    // email: "info@bikoulacomplexe.com",
+    tel: ["TEL: [+33] 09 86 15 80 83", "WhatsApp: [+33] 06 63 88 54 46"],
     email: "bikoulacomplexe@outlook.com"
   },
   {
     address: [
-      "Siège fonctionnel: 15 Rue Antoine de Saint-Exupéry",
+      "15 Rue Antoine de Saint-Exupéry",
       "94270 Le Kremlin-Bicêtre, France",
-      "N° SIRET : 79931625200029"
+      "RCS N°SIRET: 978552826 00015",
+      "INTRA-COMMUNITY VAT : FR 50978552826"
     ],
-    tel: ["Bureau: (+33) 9 62 59 36 76", "Portable 1: (+33) 7 87 83 71 93", "Portable 2: (+33) 6 63 87 54 46"],
-    email: "info@bikoulacomplexe.com"
+    tel: ["TEL: [+33] 09 86 15 80 83", "WhatsApp: [+33] 06 63 88 54 46"],
+    email: "bikoulacomplexe@outlook.com"
   },
 
 ]

@@ -44,7 +44,7 @@ const NavBar: React.FC<Props> = ({ active }) => {
                         <div className="h-16 w-16 object-cover relative">
                             <Image layout="fill" src={require('../assets/images/logo.png')} alt="Logo Bikoula Complexe" />
                         </div>
-                        <h2 className="text-2xl font-bold text-brown">Bikoula Complexe <br /> <span className="hidden md:inline-block">International Consulting</span> </h2>
+                        <h2 className="text-2xl font-bold text-brown">Bikoula Complexe <br /> <span className="hidden md:inline-block text-base">International Consulting Sarl</span> </h2>
                     </div>
                 </Link>
                 <ul className="items-stretch hidden space-x-3 md:flex">

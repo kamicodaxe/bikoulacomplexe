@@ -10,7 +10,7 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
             </div>
             <div className="container mx-auto grid justify-center gap-4 gap-y-6 text-center sm:grid-cols-2 lg:grid-cols-3">
 
-                <div className="flex flex-col items-center p-4">
+                {/* <div className="flex flex-col items-center p-4">
                     <div className="max-w-[300px] bg-white">
                         <Image src="/partners/banner-01.jpg" width={320} height={220} className="object-cover" alt="partner bikoula complexe" />
                         <div className="p-2 pb-4">
@@ -20,7 +20,7 @@ const WhatWeDid: React.FC<{}> = ({ }) => {
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="flex flex-col items-center p-4">
                     <div className="max-w-[300px] bg-white">

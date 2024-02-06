@@ -19,9 +19,9 @@ const TrustedBy: React.FC<{}> = ({ }) => {
                 <h2 className="text-4xl font-bold">Nos partenaires</h2>
             </div>
             <div className="container flex flex-wrap justify-center mx-auto text-gray-400">
-                <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
+                {/* <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
                     <img className="wow fadeInUp object-contain" src={"/partners/logo-01.png"} alt="Partner logo" />
-                </div>
+                </div> */}
                 <div className="flex justify-center w-1/2 p-6 align-middle md:w-1/3 xl:w-1/4">
                     <img className="wow fadeInUp object-contain" src={"/partners/logo-02.png"} alt="Partner logo" />
                 </div>
